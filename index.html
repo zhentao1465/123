@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PowerFit</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script1.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+        <div class="logo">PowerFit</div>
+        <ul class="nav-links">
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="Locations.html">Locations</a></li>
+        </ul>
+    <div class="cta">
+      <a href="membership.html" class="button">Join Now</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1><span class="highlight">Transform Your Body</span> with<br><strong>FitZone Gym</strong></h1>
+    <p>Your fitness journey begins here. Explore tailored training programs, experienced coaches, and flexible memberships for every goal.</p>
+  </header>
+  
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="img1.jpg" alt="Gym 1" />
+  </div>
+  <div class="mySlides fade">
+    <img src="img2.jpg" alt="Gym 2" />
+  </div>
+  <div class="mySlides fade">
+    <img src="img3.jpg" alt="Gym 3" />
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="dots">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+  <section class="services">
+     <a href="membership.html?plan=basic" class="box-link">
+    <div class="service-box orange">
+      <h2>Basic Membership</h2>
+      <p>Access to gym floor, locker rooms, and showers. Ideal for self-paced workouts and beginners.</p>
+      <strong>$29/month</strong>
+    </div>
+  </a>
+    <a href="membership.html?plan=standard" class="box-link">
+    <div class="service-box yellow">
+      <h2>Group Classes</h2>
+      <p>Join high-energy classes like HIIT, Zumba, and Yoga led by certified trainers.</p>
+      <strong>$49/month</strong>
+    </div>
+    </a>
+    <a href="membership.html?plan=premium" class="box-link">
+    <div class="service-box purple">
+      <h2>Personal Training</h2>
+      <p>One-on-one coaching sessions tailored to your fitness goals and needs.</p>
+      <strong>$79/month</strong>
+    </div>
+    </a>
+  </section>
+</body>
+</html>

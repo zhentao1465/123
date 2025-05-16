@@ -1,0 +1,107 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background-image: url('blackground.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-container {
+  max-width: 600px;
+  margin: 3em auto;
+  padding: 2em;
+  background-color: rgba(28, 15, 69, 0.8); 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  flex-grow: 1;
+  backdrop-filter: blur(8px); 
+}
+
+#membership {
+  text-align: right;
+}
+
+#membership-input {
+  width: 100%;
+  padding: 0.75em;
+  font-size: 1.1em;
+  background-color: #2e1f65;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+
+.membership-options {
+  margin-top: 1em;
+}
+
+.membership-btn {
+  width: 100%;
+  padding: 0.75em;
+  margin: 0.5em 0;
+  font-size: 1.1em;
+  background-color: #d4ff5c;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.membership-btn:hover {
+  background-color: #b0e147;
+}
+
+.membership-text {
+  margin-top: 1em;
+  color: #d4ff5c;
+  font-size: 1.1em;
+  display: none;
+}
+
+.membership-text.visible {
+  display: block;
+}
+
+
+.submit-btn {
+  width: 100%;
+  padding: 0.9em;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #d4ff5c;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #b0e147;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: rgba(46, 31, 101, 0.8);
+  color: white;
+  border: 1px solid #4a3a8a;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s;
+}
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> PowerFit Locator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+     <div class="logo">PowerFit</div>
+        <ul class="nav-links">
+          <link rel="stylesheet" href="style3.css">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="Locations.html">Locations</a></li>
+        </ul>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      gmpx-store-locator {
+        width: 100%;
+        height: 100%;
+
+        --gmpx-color-surface: #fff;
+        --gmpx-color-on-surface: #212121;
+        --gmpx-color-on-surface-variant: #757575;
+        --gmpx-color-primary: #1967d2;
+        --gmpx-color-outline: #e0e0e0;
+        --gmpx-fixed-panel-width-row-layout: 28.5em;
+        --gmpx-fixed-panel-height-column-layout: 65%;
+        --gmpx-font-family-base: "Roboto", sans-serif;
+        --gmpx-font-family-headings: "Roboto", sans-serif;
+        --gmpx-font-size-base: 0.875rem;
+        --gmpx-hours-color-open: #188038;
+        --gmpx-hours-color-closed: #d50000;
+        --gmpx-rating-color: #ffb300;
+        --gmpx-rating-color-empty: #e0e0e0;
+      }
+    </style>
+    <script>
+      const CONFIGURATION = {
+        "locations": [
+          {"title":"80 Leonard St","address1":"80 Leonard St","address2":"New York, NY 10013, USA","coords":{"lat":40.717296345109986,"lng":-74.00517672209017},"placeId":"ChIJg7_aPiBawokRHe1Nh3f6pho"},
+          {"title":"2 Cooper Sq","address1":"2 Cooper Sq","address2":"New York, NY 10003, USA","coords":{"lat":40.72745289164205,"lng":-73.99187382209014},"placeId":"ChIJlaOLJ5tZwokRJy2GvUbrsBk"},
+          {"title":"140 Broadway","address1":"140 Broadway","address2":"New York, NY 10005, USA","coords":{"lat":40.70873809700942,"lng":-74.01020072209015},"placeId":"ChIJtRB4KVdbwokR1jUu45R_Qb8"}
+        ],
+        "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
+        "mapsApiKey": "AIzaSyCPe8sfUllwuYQUrYOTgAeyAwHyIASnMgQ",
+        "capabilities": {"input":true,"autocomplete":true,"directions":false,"distanceMatrix":true,"details":false,"actions":false}
+      };
+
+    </script>
+    <script type="module">
+      document.addEventListener('DOMContentLoaded', async () => {
+        await customElements.whenDefined('gmpx-store-locator');
+        const locator = document.querySelector('gmpx-store-locator');
+        locator.configureFromQuickBuilder(CONFIGURATION);
+      });
+    </script>
+  </head>
+  <body>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+
+    <gmpx-api-loader key="AIzaSyCPe8sfUllwuYQUrYOTgAeyAwHyIASnMgQ" solution-channel="GMP_QB_locatorplus_v11_cABD"></gmpx-api-loader>
+    <gmpx-store-locator map-id="DEMO_MAP_ID"></gmpx-store-locator>
+  </body>
+</html>
